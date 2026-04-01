@@ -1,0 +1,26 @@
+# Core deep learning
+torch>=1.13.0
+torchaudio>=0.13.0
+pytorch-lightning>=2.0.0
+timm>=0.6.0
+
+# Scientific computing
+numpy
+scipy
+pandas
+
+# Machine learning
+scikit-learn
+
+# Visualization
+matplotlib
+librosa
+
+# Feature storage
+h5py
+
+# Progress bars
+tqdm
+
+# Feature engineering (clone from https://github.com/tyiannak/pyAudioAnalysis)
+# pyAudioAnalysis

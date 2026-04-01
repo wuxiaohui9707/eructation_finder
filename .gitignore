@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+.env/
+.venv/
+env/
+venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Model weights and checkpoints
+*.pth
+*.ckpt
+*.pt
+
+# Audio files (not part of the code release)
+*.wav
+*.WAV
+*.mp3
+*.flac
+
+# Data files
+*.h5
+*.hdf5
+*.npz
+*.pkl
+
+# Logs and outputs
+lightning_logs/
+logs/
+*.log
+tensorboard/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Manuscript
+*.docx
