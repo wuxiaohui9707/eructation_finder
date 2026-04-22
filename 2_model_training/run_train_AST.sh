@@ -29,7 +29,7 @@ label_index="${AST_DATASET}/label_index.csv"
 
 # ── Training Hyperparameters ─────────────────────────────────────────────────
 batch_size=12
-n_epochs=50
+n_epochs=100
 warmup=5
 patience=15
 lr=1e-5

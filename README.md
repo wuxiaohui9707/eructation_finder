@@ -38,8 +38,6 @@ python data_preparation/dataset_make.py \
 ### Step 2: Model Training
 Train a chosen architecture using isolated event data. AST and PANNs perfectly share the unified Kaldi-based Mel-Spectrogram extraction infrastructure (`core/data_module.py`). 
 
-You can toggle the custom **1KHz Split Frequency Division** mode by passing `--freq_division_mode=split_1khz`!
-
 **Train AST:**
 ```bash
 python model_training/train_AST.py \
@@ -47,7 +45,7 @@ python model_training/train_AST.py \
     --exp_dir experiments/ast_train \
     --freq_division_mode uniform \
     --batch_size 16 \
-    --max_epochs 50
+    --max_epochs 100
 ```
 
 **Train PANNs:**
