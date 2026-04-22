@@ -2,7 +2,7 @@
 
 This repository contains the official codebase for the quantitative acoustic analysis and detection of cattle rumination and eructation (burps). The project has been refactored into a rigorous, process-centric pipeline to ensure usability, reproducibility, and high modularity. 
 
-It supports state-of-the-art Deep Learning models like **Audio Spectrogram Transformer (AST)** and **PANNs (Cnn14)**, as well as Traditional Machine Learning ensembles (via `pyAudioAnalysis`).
+It supports state-of-the-art Deep Learning models like **Audio Spectrogram Transformer (AST)** and **PANNs (Cnn14)**, as well as Feature-based Machine Learning.
 
 ---
 
@@ -81,16 +81,8 @@ python inference_unseen_audio/inference_AST.py \
 ```
 
 ### Step 5: Visualization
-Generate insightful graphics comparing standard uniform mel-filterbanks with custom 1kHz-split filterbanks, or plot t-SNE embeddings.
+Generate insightful t-SNE embeddings of audio features.
 ```bash
-# Visualize AST structural patch heatmaps
-python visualization/ast_visualization.py \
-    --audio /path/to/sample.wav \
-    --n_mels 128 \
-    --patch_size 16 \
-    --output ast_vis_
-
-# Plot t-SNE feature embeddings
 python visualization/plot_tsne.py \
     --features_file /path/to/features.npz \
     --output_dir tsne_outputs
