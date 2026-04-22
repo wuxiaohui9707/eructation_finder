@@ -2,7 +2,7 @@
 
 This repository contains the official codebase for the quantitative acoustic analysis and detection of cattle rumination and eructation (burps). The project has been refactored into a rigorous, process-centric pipeline to ensure usability, reproducibility, and high modularity. 
 
-It supports state-of-the-art Deep Learning models like **Audio Spectrogram Transformer (AST)** and **PANNs (Cnn14)**, as well as Feature-based Machine Learning.
+It supports Deep Learning models like **Audio Spectrogram Transformer (AST)** and **PANNs (Cnn14)**, as well as **Feature-based Machine Learning**.
 
 ---
 
@@ -76,8 +76,7 @@ python inference_unseen_audio/inference_AST.py \
     --audio_input /path/to/continuous/cattle_audio.wav \
     --label_csv /path/to/label_index.csv \
     --exp_dir inference_outputs \
-    --window_size 5 --step_size 0.5 \
-    --nms True
+    --window_size 5 --step_size 0.5
 ```
 
 ### Step 5: Visualization
